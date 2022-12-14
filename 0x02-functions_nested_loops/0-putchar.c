@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * main - print putchar
+ * main - Entry point
  *
- * is written by ingenious
- *
- * Return: 0
+ * Return: 0 (Success)
  */
 
 int main(void)
