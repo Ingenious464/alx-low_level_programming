@@ -5,9 +5,17 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
+	char c;
+
+	c = 'z';
+	while
+		(c >= 'a') {
+			putchar(c);
+			c--;
+		}
+	putchar('\n');
 	return (0);
 }
-
