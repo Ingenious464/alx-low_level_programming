@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- *print_numbers - print 0123456789
- * owned by Bwave ICT
+ *print_numbers - prints the numbers
+ *from 0 to 9 using _putchar
  *Return: void
  */
 
 void print_numbers(void)
 {
-	char c;
+	int num;
 
-	for (c = '0'; c <= '9'; c++)
+	for (num = 48; num <= 57; num++)
 	{
-		_putchar(c);
+		_putchar(num);
 	}
-	_putchar('\n');
-	return (void);
+
+	_putchar(10);
 }
