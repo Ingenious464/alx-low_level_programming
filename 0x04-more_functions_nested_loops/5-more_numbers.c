@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 
 /**
  * more_numbers - function to print numbers
@@ -15,9 +15,9 @@ void more_numbers(void)
 		{
 			if (b > 9)
 			{
-				_putchar((num / 10) + 48);
+				_putchar((b / 10) + 48);
 			}
-			_putchar((num % 10) + 48);
+			_putchar((b % 10) + 48);
 		}
 		_putchar('\n');
 	}
