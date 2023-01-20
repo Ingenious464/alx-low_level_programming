@@ -35,13 +35,11 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 		}
-
 		if ((form == 'c' || form == 'i' || form == 'f' || form == 's')
 		&& format[i + 1])
 			printf(", ");
 		i++
 	}
-	
 	printf("\n");
 	va_end(ar);
 }
