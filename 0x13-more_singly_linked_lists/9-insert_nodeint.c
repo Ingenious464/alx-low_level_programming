@@ -14,14 +14,14 @@ unsigned int a;
 listint_t *b;
 listint_t *c;
 
-if (*head == NULL && index != 0)
+if (*head == NULL && idx != 0)
 return (NULL);
 b = *head;
 c = malloc(sizeof(listint_t));
 if (c == NULL)
 return (NULL);
 c->n = n;
-if (index == 0)
+if (idx == 0)
 {
 c->next = *head;
 *head = c;
@@ -29,7 +29,7 @@ return (c);
 }
 b = *head;
 a = 0;
-while (a < index - 1)
+while (a < idx - 1)
 {
 b = b->next;
 if (b == NULL)
