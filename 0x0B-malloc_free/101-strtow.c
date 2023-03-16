@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strtow - returns a pointer to an array of strings (words)
+ * strtow - returns a pointer to an array of strings
  * @str: pointer to string params
  * Return: char
  */
@@ -50,14 +50,17 @@ char **strtow(char *str)
 		{
 			len += 1;
 		}
+
 		len += 1;
+
 		col = malloc(sizeof(char) * len);
 		if (!col)
 		{
 			for (k = j - 1; k >= 0; k--)
-		{
+			{
 				free(f[k]);
 			}
+
 			free(f);
 			return (NULL);
 		}
@@ -72,6 +75,7 @@ char **strtow(char *str)
 			j++;
 		}
 	}
+
 	*(f + j) = NULL;
 	return (f);
 }
