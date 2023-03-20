@@ -1,1 +1,1 @@
-This is the folder containing the codes of the task 0x18-dynamic_libraries
+This is the directory for 0x09-static_libraries task
