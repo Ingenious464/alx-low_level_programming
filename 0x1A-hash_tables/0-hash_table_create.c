@@ -8,7 +8,7 @@
  * Return: the hash table created
  */
 
-hash_table_t *hash_table_create(unsigned long int size);
+hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *newtable = NULL;
 	unsigned int n;
