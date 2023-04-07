@@ -15,17 +15,18 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (size == 0)
 		return (NULL);
-	new_table = malloc(sizeof(hash_table_t);
-	if (new_table == NULL)
+	newtable = malloc(sizeof(hash_table_t));
+	if (newtable == NULL)
 		return (NULL);
-	new_table->size = size;
-	new_table->array = malloc(sizeof(hash_table_t);
-	if (new_table->array == NULL)
+	newtable->size = size;
+	newtable->array = malloc(sizeof(hash_table_t));
+	if (newtable->array == NULL)
 	{
-		free(new_table);
+		free(newtable);
 		return (NULL);
 	}
-	for (n = 0, n < size; n++)
-		new_table->array[n] = NULL;
-	return (new_table);
+	for (n = 0; n < size; n++)
+		newtable->array[n] = NULL;
+	
+	return (newtable);
 }
